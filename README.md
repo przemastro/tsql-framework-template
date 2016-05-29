@@ -27,11 +27,11 @@ Stored Procedures
     1. observationsDelta
 
 In addition: 
-1. Table 1 - status (new, old), active (0, 1), null values allowed in Photometry columns
-2. Tables 3-8 contains unique and not null values
-3. Table 2 contains only active records
-4. If there are no photometry for observation then columns are populated with nulls
-5. Data types conversion
+Table 1 - status (new, old), active (0, 1), null values allowed in Photometry columns
+Tables 3-8 contains unique and not null values
+Table 2 contains only active records
+If there are no photometry for observation then columns are populated with nulls
+Data types conversion between stagingObservations and observations tables
 
 
 More info you can find in https://github.com/przemastro/astroApp.git
