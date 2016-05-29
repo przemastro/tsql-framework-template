@@ -2,6 +2,7 @@
 SqlServer 2012 Express
 
 DB 'Astro' consists of:
+
 Tables
 
     1. stagingObservations - id, starName, startDate, endDate, uPhotometry, uPhotometryTime, vPhotometry, vPhotometryTime, bPhotometry, bPhotometryTime, Status, Active
@@ -15,12 +16,14 @@ Tables
     9. log - id, procName, starDate, endDate, Message
 
 Views
+
     1. observationsSorted - id, starName, startDate, endDate, uPhotometryFlag, vPhotometryFlag, bPhotometryFlag
     2. uPhotometrySorted - id, uPhotometry, uPhotometryTime
     3. vPhotometrySorted - id, vPhotometry, vPhotometryTime
     4. bPhotometrySorted - id, bPhotometry, bPhotometryTime
 
-Stored Procedures:
+Stored Procedures
+
     1. observationsDelta
 
 In addition: 
