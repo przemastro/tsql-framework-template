@@ -30,6 +30,10 @@ Stored Procedures
     1. observationsDelta
     2. insertTestData
     
+Queries
+
+    1. metadata.sql - some metadata used by stored procedures
+    
 In addition test data are prepared.    
 
 More info you can find in https://github.com/przemastro/astroApp.git and in gettingStarted.txt file.
