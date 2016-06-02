@@ -5,6 +5,7 @@ This is a demo version of framework used for tsql stored procedures testing. It 
 is prepared for https://github.com/przemastro/astroApp.git DB but obviously can be addapted to any DB schema which uses stored procedures. 
 
 DB 'Astro' consists of:
+
 Tables
 
     1. stagingObservations - id, rowId, starName, startDate, endDate, uPhotometry, uPhotometryTime, vPhotometry, vPhotometryTime, bPhotometry, bPhotometryTime, Status, Active
