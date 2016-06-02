@@ -26,6 +26,7 @@ INSERT INTO dbo.metadataCounts
 		StagingColumn,
 		DeltaColumn,
 		DeltaColumnId,
+		PhotometryTable,
 		DataTypeConversion,
 		NullValuesConversion,
 		JoinHint
@@ -36,6 +37,7 @@ INSERT INTO dbo.metadataCounts
 			   N'uPhotometry',
 			   N'uPhotometry',
 			   N'uPhotometryId',
+			   N'dbo.uPhotometry',
 			   N'',
 			   N'',
 			   N''
@@ -45,6 +47,7 @@ INSERT INTO dbo.metadataCounts
 			   N'vPhotometry',
 			   N'vPhotometry',
 			   N'vPhotometryId',
+			   N'dbo.vPhotometry',
 			   N'',
 			   N'',
 			   N''
@@ -54,6 +57,7 @@ INSERT INTO dbo.metadataCounts
 			   N'bPhotometry',
 			   N'bPhotometry',
 			   N'bPhotometryId',
+			   N'dbo.bPhotometry',
 			   N'',
 			   N'',
 			   N''
@@ -63,6 +67,7 @@ INSERT INTO dbo.metadataCounts
 			   N'uPhotometryTime',
 			   N'uPhotometryTime',
 			   N'uPhotometryTimeId',
+			   N'dbo.uPhotometryTime',
 			   N'',
 			   N'',
 			   N''   
@@ -72,6 +77,7 @@ INSERT INTO dbo.metadataCounts
 			   N'vPhotometryTime',
 			   N'vPhotometryTime',
 			   N'vPhotometryTimeId',
+			   N'dbo.vPhotometryTime',
 			   N'',
 			   N'',
 			   N'' 
@@ -81,6 +87,7 @@ INSERT INTO dbo.metadataCounts
 			   N'bPhotometryTime',
 			   N'bPhotometryTime',
 			   N'bPhotometryTimeId',
+			   N'dbo.bPhotometryTime',
 			   N'',
 			   N'',
 			   N'' 
@@ -91,10 +98,10 @@ INSERT INTO dbo.metadataComparison
 		         StagingColumn,
 		         DeltaColumn,
 		         DeltaColumnId,
+				 PhotometryTable,
 		         DataTypeConversion,
 		         NullValuesConversion,
 		         JoinHint
 			   )
 			   select * from cte
-
 GO
