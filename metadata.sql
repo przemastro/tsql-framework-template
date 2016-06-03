@@ -9,10 +9,10 @@ SET NOCOUNT ON
 		)
 		as (
 		SELECT 1,
-		       N'dbo.stagingObservations',
-			   N'dbo.observations'
+		       N'stg.stagingObservations',
+			   N'bi.observations'
 			   )
-INSERT INTO dbo.metadataCounts
+INSERT INTO util.metadataCounts
                ( ID,
 		         StagingTable,
 				 DeltaTable
@@ -37,7 +37,7 @@ INSERT INTO dbo.metadataCounts
 			   N'uPhotometry',
 			   N'uPhotometry',
 			   N'uPhotometryId',
-			   N'dbo.uPhotometry',
+			   N'bi.uPhotometry',
 			   N'',
 			   N'',
 			   N''
@@ -47,7 +47,7 @@ INSERT INTO dbo.metadataCounts
 			   N'vPhotometry',
 			   N'vPhotometry',
 			   N'vPhotometryId',
-			   N'dbo.vPhotometry',
+			   N'bi.vPhotometry',
 			   N'',
 			   N'',
 			   N''
@@ -57,7 +57,7 @@ INSERT INTO dbo.metadataCounts
 			   N'bPhotometry',
 			   N'bPhotometry',
 			   N'bPhotometryId',
-			   N'dbo.bPhotometry',
+			   N'bi.bPhotometry',
 			   N'',
 			   N'',
 			   N''
@@ -67,7 +67,7 @@ INSERT INTO dbo.metadataCounts
 			   N'uPhotometryTime',
 			   N'uPhotometryTime',
 			   N'uPhotometryTimeId',
-			   N'dbo.uPhotometryTime',
+			   N'bi.uPhotometryTime',
 			   N'',
 			   N'',
 			   N''   
@@ -77,7 +77,7 @@ INSERT INTO dbo.metadataCounts
 			   N'vPhotometryTime',
 			   N'vPhotometryTime',
 			   N'vPhotometryTimeId',
-			   N'dbo.vPhotometryTime',
+			   N'bi.vPhotometryTime',
 			   N'',
 			   N'',
 			   N'' 
@@ -87,12 +87,12 @@ INSERT INTO dbo.metadataCounts
 			   N'bPhotometryTime',
 			   N'bPhotometryTime',
 			   N'bPhotometryTimeId',
-			   N'dbo.bPhotometryTime',
+			   N'bi.bPhotometryTime',
 			   N'',
 			   N'',
 			   N'' 
 			   )
-INSERT INTO dbo.metadataComparison
+INSERT INTO util.metadataComparison
                ( ID,
 		         MetadataCountsId,
 		         StagingColumn,
