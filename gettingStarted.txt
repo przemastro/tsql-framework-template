@@ -1,0 +1,29 @@
+Few steps need to be performed in order to use start using test stored procedures:
+
+ 1. Create new DB 'Astro' - the easiest way is to open 'New Query' window in your Databases in Management
+    Studio and run DB.sql query. This will create new database 'Astro' with entire structure
+ 2. Import TestData to DB 'Astro' - In the 'Object Explorer' window, right click on your database and select
+    Tasks -> Import Data. Then just select in Data Source a 'Flat File Source' and then provided TestData.csv
+	file. Check out 'Column names in the first data row' checkbox and the last thing you have to remember is
+	to change from schema from [dbo].[TestData] to [data].[TestData] -> This will create/repopulate 
+	existing [data].[TestData].
+ 3. And finally populate metadata table running metadata.sql in your DB.
+
+Below is an example how to process data and run tests procedures
+
+   exec data.insertTestData @observationId=1, @starName='Denebola', @startDate='20160303', @endDate='20160303'
+   exec bi.observationsDelta @observationId=1
+
+   exec test.observationsCounts @observationId=1, @stagingTable='stg.stagingObservations', @deltaTable='bi.observations'
+   exec test.observationsComparison @observationId=1, @stagingTable='stg.stagingObservations', @deltaTable='bi.observations', @reportMode='Y
+
+Procedures executions are logged in
+
+  select * from log.log
+
+And test result is inserted to
+
+   select * from util.testStatus
+ 
+ 
+Have a nice testing 
