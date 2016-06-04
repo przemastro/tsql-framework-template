@@ -17,6 +17,10 @@ Tables
     7. vPhotometryTime - vPhotometryTimeId, vPhotometryTime
     8. bPhotometryTime - bPhotometryTimeId, bPhotometryTime
     9. log - id, procName, starDate, endDate, Message
+    10.TestData
+    11.testStatus
+    12.metadataCounts
+    13.metadataComparison
 
 Views
 
@@ -29,6 +33,9 @@ Stored Procedures
 
     1. observationsDelta
     2. insertTestData
+    3. observationsCounts
+    4. observationsComparison
+    
     
 Queries
 
