@@ -1,8 +1,7 @@
-# tsqlFramework
+# TsqlFramework
 SqlServer 2012 Express
 
-This is a demo version of framework used for tsql stored procedures testing. It is a set of test stored procedures and
-is prepared for https://github.com/przemastro/astroApp.git DB but obviously can be addapted to any DB schema which uses stored procedures. 
+This is a demo version of a framework I used for tsql stored procedures testing in one of the Barclays Data Warehouse project. It is a set of test stored procedures.
 
 DB 'Astro' consists of:
 
