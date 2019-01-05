@@ -1,7 +1,7 @@
 # TsqlFramework
 SqlServer 2012 Express
 
-This is a demo version of a framework I used for tsql stored procedures testing in one of the Barclays Data Warehouse project developed in 2015. It is a set of test stored procedures.
+This is a demo version of a framework I used for tsql stored procedures testing in one of the Barclays Data Warehouse project developed in 2016. It is a set of test stored procedures.
 
 DB 'Astro' consists of:
 
