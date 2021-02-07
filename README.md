@@ -1,45 +1,20 @@
-# TsqlFramework
-SqlServer 2012 Express
+# Tsql Test Framework
+[![GitHub issues](https://img.shields.io/github/issues/przemastro/tsql-framework)](https://github.com/przemastro/tsql-framework/issues)
+[![GitHub forks](https://img.shields.io/github/forks/przemastro/tsql-framework)](https://github.com/przemastro/tsql-framework/network)
+[![GitHub stars](https://img.shields.io/github/stars/przemastro/tsql-framework)](https://github.com/przemastro/tsql-framework/stargazers)
+[![SQL Server version](https://img.shields.io/badge/TSQL-2012-%23ccc)](https://github.com/przemastro/tsql-framework)
 
-This is a demo version of a framework I used for tsql stored procedures testing in one of the Barclays Data Warehouse project developed in 2016. It is a set of test stored procedures.
+# Features
+This is a demo version of a framework I used for tsql stored procedures testing in one of the Barclays Data Warehouse project developed in 2016. It is a set of test stored procedures. 
 
-DB 'Astro' consists of:
+1. Test Data and Schema procedure
+2. Quality and Quantity comparison procedures
 
-Tables
+# Installation
 
-    1. stagingObservations - id, rowId, starName, startDate, endDate, uPhotometry, uPhotometryTime, vPhotometry, vPhotometryTime, bPhotometry, bPhotometryTime, Status, Active
-    2. observations - id, rowId, starName, startDate, endDate, uPhotometryId, uPhotometryTimeId, vPhotometryId, vPhotometryTimeId, bPhotometryId, bPhotometryTimeId
-    3. uPhotometry - uPhotometryId, uPhotometry
-    4. vPhotometry - bPhotometryId, vPhotometry
-    5. bPhotometry - bPhotometryId, bPhotometry
-    6. uPhotometryTime - uPhotometryTimeId, uPhotometryTime
-    7. vPhotometryTime - vPhotometryTimeId, vPhotometryTime
-    8. bPhotometryTime - bPhotometryTimeId, bPhotometryTime
-    9. log - id, procName, starDate, endDate, Message
-    10.TestData
-    11.testStatus
-    12.metadataCounts
-    13.metadataComparison
+1. Install SqlServer 2012 Express
 
-Views
+# Run
 
-    1. observationsSorted - id, starName, startDate, endDate
-    2. uPhotometrySorted - id, uPhotometry, uPhotometryTime
-    3. vPhotometrySorted - id, vPhotometry, vPhotometryTime
-    4. bPhotometrySorted - id, bPhotometry, bPhotometryTime
+Populate schemas and tables with data and run quality and quantity procedures
 
-Stored Procedures
-
-    1. observationsDelta
-    2. insertTestData
-    3. observationsCounts
-    4. observationsComparison
-    
-    
-Queries
-
-    1. metadata.sql - some metadata used by stored procedures
-    
-In addition test data are prepared.    
-
-More info you can find in https://github.com/przemastro/astroApp.git and in gettingStarted.txt file.
