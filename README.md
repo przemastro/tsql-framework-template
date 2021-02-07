@@ -13,8 +13,9 @@ This is a demo version of a framework I used for tsql stored procedures testing 
 # Installation
 
 1. Install SqlServer 2012 Express
+2. SQL Server Management Studio
 
 # Run
 
-Populate schemas and tables with data and run quality and quantity procedures
+Create schemas DB.sql and and populate tables (.csv) with data. Run quality and quantity procedures
 
